@@ -13,13 +13,14 @@ class Counter extends Component {
     // increments after waiting for one second
   };
 
-  add = () => {
-    this.props.increment(this.state.count);
-  };
+  // don't need any of the below code that is commented out
+  //   add = () => {
+  //     this.props.increment(this.state.count);
+  //   };
 
-  subtract = () => {
-    this.props.decrement(this.state.count);
-  };
+  //   subtract = () => {
+  //     this.props.decrement(this.state.count);
+  //   };
 
   render() {
     // Fill in the two button onClick methods
@@ -31,7 +32,7 @@ class Counter extends Component {
         <button
           onClick={() => {
             /* Fill me in */
-            this.add;
+            this.props.increment();
           }}
         >
           +
@@ -39,7 +40,7 @@ class Counter extends Component {
         <button
           onClick={() => {
             /* Fill me in */
-            this.subtract;
+            this.props.decrement();
           }}
         >
           -
